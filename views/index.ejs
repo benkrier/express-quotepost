@@ -5,7 +5,7 @@
   <title>Quote Post App</title>
 </head>
 <body>
-  <h1>Past Expressions</h1>
+  <h1>Star Wars Expressions</h1>
 
   <ul class="quotes">
     <% for(var i=0; i<quotes.length; i++) {%>
@@ -16,12 +16,24 @@
     <% } %>
   </ul>
 
-  <h2>Express Yourself!</h2>
+  <h3>Express yourself with a quote from Star Wars!</h3>
 
   <form action="/quotes" method="Post">
     <input type="text" placeholder="name" name="name">
     <input type="text" placeholder="expression" name="quote">
     <button type="submit">Submit</button>
   </form>
+  <div>
+    <h3>Replace last quote written by Master Yoda with a quote written by Darth Vader.</h3>
+    <button id="update">Darth Vader invades!</button>
+  </div>
+
+  <div>
+    <h3>Delete Darth Vader's first quote.</h3>
+    <button id="delete"> Delete first Darth Vader quote </button>
+  </div>
+
+  <script scr="main.js"></script>
+
 </body>
 </html>
