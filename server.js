@@ -10,7 +10,7 @@ var db
 MongoClient.connect('mongodb://obiwan:04b13a77k@ds045465.mlab.com:45465/express-quoteposts', (err, database) => {
   if (err) return console.log(err)
   db = database
-  app.listen(3000, () => {
+  app.listen(process.env.PORT || 3000, () => {
     console.log('listening on 3000')
   })
 })
