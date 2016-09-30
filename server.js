@@ -6,10 +6,8 @@ const app = express();
 const MongoClient = require('mongodb').MongoClient
 
 var db
-var mongodb = require('mongodb')
-var uri = 'mongodb://heroku_hnb4p4g1:v5vdngk6d214putk98qsu9hjlv@ds047166.mlab.com:47166/heroku_hnb4p4g1'
 
-mongodb.MongoClient.connect(uri, (err, database) => {
+MongoClient.connect('mongodb://obiwan:04b13a77k@ds045465.mlab.com:45465/express-quoteposts', (err, database) => {
   if (err) return console.log(err)
   db = database
   app.listen(3000, () => {
