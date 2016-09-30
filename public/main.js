@@ -1,4 +1,4 @@
-// main.js
+/* globals fetch */
 
 var update = document.getElementById('update')
 var del = document.getElementById('delete')
@@ -8,7 +8,7 @@ update.addEventListener('click', function () {
     method: 'put',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
-      'name': 'Darth Vader'
+      'name': 'Darth Vader',
       'quote': 'I find your lack of faith disturbing.'
     })
   })
