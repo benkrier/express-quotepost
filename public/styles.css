@@ -1,5 +1,11 @@
 html {
   font-size: 20px;
+  color: #d3d3d3;
+  background: url(https://metrouk2.files.wordpress.com/2015/06/ad_171522930.jpg?w=620&h=422&crop=1) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .quote {
